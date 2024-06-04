@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Objednávka</title>
+    <link rel="icon" href="Шар 4.png" type="image/png" />
+    <link rel="stylesheet" href="objednavka.css" />
+  </head>
+  <body>
+    <form action="" class="form-container">
+      <div class="form-group">
+        <label for="jmeno">Jméno přijímače</label>
+        <input type="text" name="jmeno" id="jmeno" />
+      </div>
+      <div class="form-group">
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email" />
+      </div>
+      <div class="form-group">
+        <label for="telefon">Telefonní číslo</label>
+        <input type="text" name="telefon" id="telefon" />
+      </div>
+      <div class="form-group">
+        <label for="zeme">Vyber zeme</label>
+        <select name="zeme" id="zeme">
+          <option value="vyber">Vyber zeme</option>
+          <option value="cesko">Česko</option>
+          <option value="slovensko">Slovensko</option>
+          <option value="honkonk">Jižní Hongkong</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="ulice">Ulice</label>
+        <input type="text" name="ulice" id="ulice" />
+      </div>
+      <div class="form-group">
+        <label for="psc">PSČ</label>
+        <input type="text" name="psc" id="psc" />
+      </div>
+      <div class="form-group">
+        <label for="mesto">Město</label>
+        <input type="text" name="mesto" id="mesto" />
+      </div>
+      <fieldset class="form-group">
+        <legend>Způsob doručení</legend>
+        <div class="delivery-option">
+          <input type="radio" name="kurier" id="posta" value="posta" />
+          <label for="posta"
+            ><img src="po-ta.png" alt="Pošta" height="100" />Česká Pošta
+          </label>
+        </div>
+        <div class="delivery-option">
+          <input type="radio" name="kurier" id="kurier" value="kurier" />
+          <label for="kurier">
+            <img src="kurier2.jpg" alt="Kurýr" height="100" /> Náš osobní
+            vietnamským kurýrem Chuj Ciň Pinem
+          </label>
+        </div>
+      </fieldset>
+      <div class="form-group form-check">
+        <input type="checkbox" id="sign" name="sign" />
+        <label for="sign">
+          Kliknutím na toto tlačítko souhlasíte s našimi zásadami
+          <a href="oh.html">ochrany osobních údajů</a>
+        </label>
+      </div>
+      <div class="form-group">
+        <input type="reset" value="Smazat" class="btn btn-danger" />
+        <input type="submit" value="Odeslat" class="btn btn-success" />
+      </div>
+    </form>
+  </body>
+</html>

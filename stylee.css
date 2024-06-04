@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Poetsen+One&display=swap");
+* {
+  font-family: "Poetsen One";
+}
+body {
+  margin: 0;
+  padding: 0;
+}
+
+header,
+footer {
+  margin: 0;
+  padding: 0;
+}
+.telefon {
+  position: sticky;
+  bottom: 10px;
+  right: 1960px;
+}
+
+.spysok {
+  display: flex;
+}
+.tovary {
+  display: flex;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+.your-mom {
+  height: 460px;
+  width: 370px;
+}
+main {
+  background-color: hsla(0, 0%, 0%, 0.925);
+  max-width: 100%;
+  margin: 0;
+  padding: 0;
+  color: rgb(255, 255, 255);
+}
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 140px;
+}
+
+nav .left-image {
+  flex: 0;
+}
+
+nav .links {
+  flex: 1;
+  text-align: left;
+}
+
+nav .right-image {
+  flex: 1;
+  text-align: right;
+  margin: 0%;
+  padding: 0%;
+}
+.ddd {
+  font-size: 35px;
+}
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 130px;
+  max-width: 100%;
+}
+.container figcaption {
+  text-align: center;
+  font-size: 32px;
+}
+.container img {
+  border-radius: 5%;
+}
+h1 {
+  margin: 0%;
+  padding-bottom: 20px;
+}
+p {
+  margin: 0;
+}
+span {
+  color: rgb(255, 89, 0);
+}
+
+/* Responsive styles */
+@media (max-width: 499px) {
+  nav {
+    flex-direction: column;
+    height: auto;
+    min-width: 350px;
+  }
+  .hlavnakartyna {
+    max-width: 400px;
+  }
+
+  nav .left-image,
+  nav .right-image {
+    flex: 0;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  nav .links {
+    flex: 0;
+    text-align: center;
+    margin-bottom: 10px;
+  }
+
+  .container {
+    grid-template-columns: 1fr;
+    grid-gap: 20px;
+  }
+
+  .your-mom {
+    height: auto;
+    width: 100%;
+  }
+
+  .ddd {
+    font-size: 24px;
+  }
+
+  header {
+    height: auto;
+    background-size: cover;
+  }
+
+  footer {
+    height: auto;
+    width: auto;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .container figcaption {
+    font-size: 24px;
+  }
+}
